@@ -21,7 +21,7 @@ public class Patrones_Diseno {
      */
     public static void main(String[] args) {
         Patrones_Diseno p = new Patrones_Diseno();
-        p.ejecutarAdapter();
+        p.ejecutarAdapter();        
     }
     
     public void ejecutarAdapter(){
