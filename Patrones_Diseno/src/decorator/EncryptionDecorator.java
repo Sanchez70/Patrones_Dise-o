@@ -12,15 +12,17 @@ import java.util.*;
  * @author 4lej4
  */
 public class EncryptionDecorator extends DataSourceDecorator{
+    //Toma a datasource como parametro
+    //Llama al constructor de la clase datasourceSecorator y establece la fuente de datos que se va a decorar 
     public EncryptionDecorator(DataSource source) {
         super(source);
     }
-
+//Sobrescribe el metodo writedata de la base y encripta los datos
     @Override
     public void writeData(String data) {
         super.writeData(encode(data));
     }
-
+//Sobrescribe el metodo readData para desencriptar los datos antes de leerlos y devolverlos 
     @Override
     public String readData() {
         return decode(super.readData());

@@ -37,7 +37,7 @@ public class CompressionDecorator extends DataSourceDecorator{
     public String readData() {
         return decompress(super.readData());
     }
-
+//Comprime los datos utilizados de la clase DeflaterOutputStream
     private String compress(String stringData) {
         byte[] data = stringData.getBytes();
         try {
@@ -51,7 +51,7 @@ public class CompressionDecorator extends DataSourceDecorator{
             return null;
         }
     }
-
+//Descomprime los datos usados en la clase InflaterInputStream
     private String decompress(String stringData) {
         byte[] data = Base64.getDecoder().decode(stringData);
         try {

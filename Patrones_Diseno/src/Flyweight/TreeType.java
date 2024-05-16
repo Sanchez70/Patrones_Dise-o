@@ -12,6 +12,7 @@ import java.awt.*;
  * @author 4lej4
  */
 public class TreeType {
+    //Informacion intrinseca
     private String name;
     private Color color;
     private String otherTreeData;

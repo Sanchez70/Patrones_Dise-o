@@ -14,7 +14,7 @@ import java.awt.Color;
  */
 public class Demo {
     static int CANVAS_SIZE = 500;
-    static int TREES_TO_DRAW = 1000000;
+    static int TREES_TO_DRAW = 10000000;
     static int TREE_TYPES = 2;
      public static void main(String[] args) {
         Forest forest = new Forest();

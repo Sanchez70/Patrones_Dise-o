@@ -12,6 +12,7 @@ import java.awt.*;
  * @author 4lej4
  */
 public class Tree {
+    //tipos de arbol
     private int x;
     private int y;
     private TreeType type;

@@ -18,6 +18,7 @@ public class FileDataSource implements DataSource{
         this.name = name;
     }
 
+    //Implementa writedata, escribe los datos en name
     @Override
     public void writeData(String data) {
         File file = new File(name);
@@ -27,7 +28,7 @@ public class FileDataSource implements DataSource{
             System.out.println(ex.getMessage());
         }
     }
-
+//Lee los datos del archivo especificado y los devuelve como string
     @Override
     public String readData() {
         char[] buffer = null;

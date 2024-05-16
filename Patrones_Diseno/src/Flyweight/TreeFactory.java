@@ -14,6 +14,7 @@ import java.util.Map;
  * @author 4lej4
  */
 public class TreeFactory {
+    //Mapa de los diferentes tipos de arboles - verifica si no hay arboles duplicados
     static Map<String, TreeType> treeTypes = new HashMap<>();
 
     public static TreeType getTreeType(String name, Color color, String otherTreeData) {
